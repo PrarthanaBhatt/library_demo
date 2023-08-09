@@ -48,8 +48,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Container(
               width: 40,
               height: 40,
-              decoration: const BoxDecoration(
-                color: Colors.blue,
+              decoration: BoxDecoration(
+                color: Colors.blue.shade800,
                 shape: BoxShape.circle,
               ),
               child: IconButton(
@@ -67,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           ],
         ),
         titleTextStyle: const TextStyle(
+          fontFamily: 'OpenSans',
           color: Colors.black,
           fontSize: 24.0,
           fontWeight: FontWeight.normal,
@@ -76,20 +77,21 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(
           children: [
             const SizedBox(
-              height: 20.0,
+              height: 12.0,
             ),
             const Padding(
               padding: EdgeInsets.only(left: 15.0, right: 20.0, top: 12.0),
               child: Text(
                 'The legal implications of autonomous vehicles and their impact on traffic regulations.',
                 style: TextStyle(
+                    fontFamily: 'OpenSans',
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
             ),
             const SizedBox(
-              height: 25.0,
+              height: 8.0,
             ),
             Row(
               children: [
@@ -141,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 Flexible(
                   child: Padding(
-                    padding: const EdgeInsets.only(right: 20.0),
+                    padding: const EdgeInsets.only(right: 12.0),
                     child: Card(
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
@@ -152,7 +154,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       ),
                       elevation: 2,
                       child: SizedBox(
-                        height: 560,
+                        // height: MediaQuery.,
+                        height: MediaQuery.of(context).size.height * 0.67,
+
                         width: double.maxFinite,
                         child: TabBarView(
                             controller: tabController,
@@ -172,7 +176,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ],
             ),
             const SizedBox(
-              height: 20.0,
+              height: 12.0,
             ),
             const DescriptionBottomWidget(),
             const SizedBox(

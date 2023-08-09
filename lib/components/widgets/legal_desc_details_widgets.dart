@@ -19,6 +19,7 @@ class LegalDescDetailsWidget extends StatelessWidget {
             child: Text(
               "Legal Description",
               style: TextStyle(
+                  fontFamily: 'OpenSans',
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.black),
@@ -46,6 +47,7 @@ class LegalDescDetailsWidget extends StatelessWidget {
               child: Text(
                 "29/2000",
                 style: TextStyle(
+                    fontFamily: 'OpenSans',
                     fontSize: 16.0,
                     fontWeight: FontWeight.normal,
                     color: Colors.grey),

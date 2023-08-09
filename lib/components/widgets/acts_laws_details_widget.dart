@@ -24,9 +24,9 @@ class ActsLawsDetailsWidget extends StatelessWidget {
     ];
 
     final List<String> itemListCentralMotor = [
-      'a. Section 93 (Maintenance of motor vechicles)',
-      'b. Section 134 (Safety glass)',
-      'c. Section 166 (Brakes)',
+      'a. Rule 93 (Maintenance of motor vechicles)',
+      'b. Rule 118 (Safety glass)',
+      'c. Rule 166 (Brakes)',
     ];
 
     return SingleChildScrollView(
@@ -44,15 +44,16 @@ class ActsLawsDetailsWidget extends StatelessWidget {
                   child: Text(
                     "Acts, Laws & regulations",
                     style: TextStyle(
-                        fontSize: 18.0,
+                        fontFamily: 'OpenSans',
+                        fontSize: 20.0,
                         fontWeight: FontWeight.normal,
                         color: Colors.black),
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.file_copy,
-                    color: Colors.blue,
+                    color: Colors.blue.shade800,
                   ),
                   onPressed: () {},
                 ),
@@ -67,7 +68,7 @@ class ActsLawsDetailsWidget extends StatelessWidget {
             ActsLawsCard(
                 title: "Indian Penal Code (IPC), 1860", itemList: itemListIPC),
             ActsLawsCard(
-                title: "Central Motor Vehicles Rules,1989 ",
+                title: "Central Motor Vehicles Rules,1989",
                 itemList: itemListCentralMotor),
             const SizedBox(
               height: 10,

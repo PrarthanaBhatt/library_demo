@@ -39,6 +39,7 @@ class CustomTabCaseTimeLine extends StatelessWidget {
               Text(
                 text,
                 style: TextStyle(
+                  fontFamily: 'OpenSans',
                   color: isSelected ? Colors.white : Colors.grey,
                 ),
               ),

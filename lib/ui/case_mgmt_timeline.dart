@@ -88,6 +88,7 @@ class _CaseMgmtTimelineScreenState extends State<CaseMgmtTimelineScreen>
           ],
         ),
         titleTextStyle: const TextStyle(
+          fontFamily: 'OpenSans',
           color: Colors.black,
           fontSize: 24.0,
           fontWeight: FontWeight.normal,
@@ -143,15 +144,16 @@ class _CaseMgmtTimelineScreenState extends State<CaseMgmtTimelineScreen>
                         const Text(
                           "Case Timeline",
                           style: TextStyle(
+                              fontFamily: 'OpenSans',
                               fontSize: 20.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.black),
                         ),
                         DropdownButton(
                           value: dropdownvalue,
-                          icon: const Icon(
+                          icon: Icon(
                             Icons.keyboard_arrow_down,
-                            color: Colors.blue,
+                            color: Colors.blue.shade800,
                           ),
                           items: items.map((String items) {
                             return DropdownMenuItem(
@@ -159,6 +161,7 @@ class _CaseMgmtTimelineScreenState extends State<CaseMgmtTimelineScreen>
                               child: Text(
                                 items,
                                 style: const TextStyle(
+                                    fontFamily: 'OpenSans',
                                     color: Colors.blue,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold),
